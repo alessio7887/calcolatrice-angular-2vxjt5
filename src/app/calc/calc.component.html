@@ -1,0 +1,33 @@
+<div class='container'>
+  <input type="text" class="alert alert-dark col-5" [(ngModel)]="espressione">
+  <p>
+    <button type="button" class="btn btn-outline-dark tasti fix" (click)="cancella()">CE</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="cancella()">C</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="meno()"><</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('/')">/</button>
+  </p>
+  <p>
+    <button type="button" class="btn btn-outline-dark tasti fix" (click)="add('7')">7</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('8')">8</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('9')">9</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('*')">x</button>
+  </p>
+  <p>
+    <button type="button" class="btn btn-outline-dark tasti fix" (click)="add('4')">4</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('5')">5</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('6')">6</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('-')">-</button>
+  </p>
+  <p>
+    <button type="button" class="btn btn-outline-dark tasti fix" (click)="add('1')">1</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('2')">2</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('3')">3</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('+')">+</button>
+  </p>
+  <p>
+    <button type="button" class="btn btn-outline-dark tasti fix" (click)="inversione()">+-</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('0')">0</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="add('.')">,</button>
+    <button type="button" class="btn btn-outline-dark tasti" (click)="somma()">=</button>
+  </p>
+</div>
